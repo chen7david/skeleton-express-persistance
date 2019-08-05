@@ -1,0 +1,40 @@
+{
+  "name": "express-skeleton",
+  "version": "1.0.0",
+  "description": "This package includes the boilerplate code and directory structure common to most express apps.",
+  "main": "app.js",
+  "scripts": {
+    "db_reset": "knex migrate:rollback && knex migrate:latest",
+    "prod": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chen7david/ExpressSkeleton.git"
+  },
+  "keywords": [
+    "ExpressSkeleton"
+  ],
+  "author": "David M.Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chen7david/ExpressSkeleton/issues"
+  },
+  "homepage": "https://github.com/chen7david/ExpressSkeleton#readme",
+  "dependencies": {
+    "@hapi/joi": "^15.1.0",
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-promise-router": "^3.0.3",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.19.1",
+    "lodash": "^4.17.15",
+    "morgan": "^1.9.1",
+    "objection": "^1.6.9",
+    "objection-db-errors": "^1.1.1",
+    "pg": "^7.12.0",
+    "pluralize": "^8.0.0"
+  }
+}
